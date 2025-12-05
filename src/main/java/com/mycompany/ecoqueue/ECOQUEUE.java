@@ -41,6 +41,7 @@ public class ECOQUEUE extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         DESIGN.setBackground(new java.awt.Color(0, 153, 0));
+        DESIGN.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout DESIGNLayout = new javax.swing.GroupLayout(DESIGN);
         DESIGN.setLayout(DESIGNLayout);
@@ -81,11 +82,11 @@ public class ECOQUEUE extends javax.swing.JFrame {
                         .addComponent(Email)
                         .addComponent(jtuser)
                         .addComponent(jpassword, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(200, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(305, Short.MAX_VALUE)
+                .addContainerGap(299, Short.MAX_VALUE)
                 .addComponent(jlogin)
-                .addGap(290, 290, 290))
+                .addGap(296, 296, 296))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,7 +104,7 @@ public class ECOQUEUE extends javax.swing.JFrame {
                 .addComponent(jshowtext)
                 .addGap(18, 18, 18)
                 .addComponent(jlogin)
-                .addGap(0, 84, Short.MAX_VALUE))
+                .addGap(0, 82, Short.MAX_VALUE))
         );
 
         pack();
@@ -116,12 +117,6 @@ public class ECOQUEUE extends javax.swing.JFrame {
 
     private void jloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jloginActionPerformed
         // TODO add your handling code here:
-        if (jtuser.getText().equals("")){
-            JOptionPane.showMessageDialog(null, "please fill out Institutional Email");
-        }
-        else if(jpassword.getText().equals("")){
-            JOptionPane.showMessageDialog()
-        }
     }//GEN-LAST:event_jloginActionPerformed
 
     private void jpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jpasswordActionPerformed
